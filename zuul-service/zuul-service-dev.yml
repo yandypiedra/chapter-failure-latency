@@ -8,7 +8,8 @@ hystrix:
           thread:
             timeoutInMilliseconds: 5000
             
- logging:
+            
+logging:
   level:
     org.springframework.web.servlet.DispatcherServlet: DEBUG
     org.springframework.cloud.sleuth: DEBUG

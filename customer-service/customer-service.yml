@@ -13,12 +13,13 @@ spring:
     password: guest
     
     
+  zipkin:
+    sender:
+      type: web
+    baseUrl: ${ZIPKIN_URL:http://localhost:9411}
   sleuth:
     sampler:
       probability: 1.0
-
-  zipkin:
-    base-url: ${ZIPKIN_URL:http://localhost:9411}
     
 eureka:
   instance:

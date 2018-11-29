@@ -11,10 +11,14 @@ spring:
     port: 5672
     username: guest
     password: guest
-  
+    
+    
   sleuth:
     sampler:
       probability: 1
+
+  zipkin:
+    base-url: ${ZIPKIN_URL:http://localhost:9411}
     
 eureka:
   instance:

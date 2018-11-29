@@ -11,6 +11,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+  
+  sleuth:
+    sampler:
+      probability: 1
     
 eureka:
   instance:

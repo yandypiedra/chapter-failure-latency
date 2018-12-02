@@ -4,6 +4,11 @@ management:
       exposure:
           include: info, health, bus-refresh, hystrix.stream
 
+
+feign:
+    hystrix:
+        enabled: true
+
 server:
   port: ${port:8181}
 

@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    platform: h2
+    
+ 
+logging:
+  level:
+    org.springframework.cloud.sleuth: DEBUG
+    com.netflix.hystrix: DEBUG

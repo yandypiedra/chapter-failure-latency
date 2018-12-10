@@ -2,7 +2,7 @@ management:
   endpoints:
     web:
       exposure:
-          include: info, health, bus-refresh
+          include: info, health, bus-refresh, actuator, refresh
           
 server:
   port: ${port:5555}
@@ -23,11 +23,8 @@ spring:
       probability: 1.0 
 
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
     fetch-registry: true
-    register-with-eureka: true
     service-url:
       defaultZone: ${EUREKA_DEFAULT_ZONE_URL:http://localhost:8761/eureka}
       

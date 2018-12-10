@@ -1,4 +1,7 @@
-management.endpoints.web.exposure.include: routes,refresh
+zuul:
+  ignored-services: 'product-service'
+  routes:
+    product-service: /catalog/**
 
 hystrix:
   command:
